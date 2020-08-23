@@ -63,14 +63,6 @@ $Bot->command("/Don\'t click me/m", function ($Update, $Match) use ($Bot) {
     $Bot->sendMessage(["chat_id" => $ChatId, "text" => "Why clicked?!", "reply_markup" => json_encode(["remove_keyboard" => TRUE])]);
 });
 
-$Bot->on("sticker", function ($Update) use ($Bot) {
-    $ChatId = $Update["message"]["chat"]["id"]; 
-    $MId = $Update["message"]["message_id"];
-    $bir = microtime(true);
-    $First = $Bot->sendMessage(["chat_id" => $ChatId, "text" => "I don't like stickers."]);
-    $Bot->deleteMessage(["chat_id" => $ChatId, "message_id" => $MId]);
-    $Bot->editMessageText(["chat_id" => $ChatId, "message_id" => $First["result"]["message_id"], "text" => "Deleted in " . (microtime(true) - $bir) . "seconds"]);
-});
 
 $Bot->on("photo", function ($Update) use ($Bot) {
     $ChatId = $Update["message"]["chat"]["id"]; 
