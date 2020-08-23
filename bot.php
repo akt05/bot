@@ -13,6 +13,7 @@ if (file_exists(__DIR__ . '/.env')) {
 $Bot->command("/[!.\/]start/m", function ($Update, $Match) use ($Bot) {
     $ChatId = $Update["message"]["chat"]["id"];
     $Bot->sendMessage(["chat_id" => $ChatId, "text" => "Started bot."]);
+}); 
 #########################################################################################################################################################
 $Bot->command("/maraz ali/m", function ($Update, $Match) use ($Bot) {
     $ChatId = $Update["message"]["chat"]["id"]; 
