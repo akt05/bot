@@ -15,9 +15,9 @@ $Bot->command("/[!.\/]start/m", function ($Update, $Match) use ($Bot) {
     $Bot->sendMessage(["chat_id" => $ChatId, "text" => "Started bot."]);
 }); 
 #########################################################################################################################################################
-$Bot->command("/maraz ali/m", function ($Update, $Match) use ($Bot) {
+$Bot->command("/Rıfkı/m", function ($Update, $Match) use ($Bot) {
     $ChatId = $Update["message"]["chat"]["id"]; 
-    $Bot->sendMessage(["chat_id" => $ChatId, "text" => "efendim"]);
+    $Bot->sendMessage(["chat_id" => $ChatId, "text" => "kes lan amcık"]);
 });
 #########################################################################################################################################################
 
