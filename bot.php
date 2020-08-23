@@ -64,29 +64,6 @@ $Bot->command("/Don\'t click me/m", function ($Update, $Match) use ($Bot) {
 });
 
 
-$Bot->on("photo", function ($Update) use ($Bot) {
-    $ChatId = $Update["message"]["chat"]["id"]; 
-    $FileId = $Update["message"]["photo"][2]["file_id"]; 
-    $Ilk = $Bot->sendMessage(["chat_id" => $ChatId, "text" => "Downloading "]);
-    $FileName = $Bot->downloadFile($FileId);
-    $Bot->editMessageText(["chat_id" => $ChatId, "message_id" => $Ilk["result"]["message_id"], "text" => "Downloaded file as $FileName"]);
-
-});
-
-$Bot->answer("inline_query", function ($Update) use ($Bot) {
-    $Bir = ["type" => "article", "id" => 0, "title" => "test", "input_message_content" => ["message_text" => "This bot created"]];
-    $Bot->answerInlineQuery(["inline_query_id" => $Update["inline_query"]["id"], "results" => json_encode([$Bir])]);    
-});
-
-$Bot->answer("callback_query", function ($Update) use ($Bot) {
-    $Data = $Update["callback_query"]["data"];
-    if ($Data == "test") {
-        $Bot->editMessageText(["chat_id" => $Update["callback_query"]["message"]["chat"]["id"], "message_id" => $Update["callback_query"]["message"]["message_id"], "text" => "You clicked button!"]);
-    } else {
-        $Bot->answerCallbackQuery(["callback_query_id" => $Update["callback_query"]["id"], "text" => "Unknown callback: " . $Data, "show_alert" => true]);
-    }
-});
-
 
 
 if (empty(getenv("BOT_TOKEN"))) {
