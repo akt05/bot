@@ -22,7 +22,7 @@ $Bot->command("/Rıfkı/m", function ($Update, $Match) use ($Bot) {
 #########################################################################################################################################################
 $Bot->command("/amk/m", function ($Update, $Match) use ($Bot) {
     $ChatId = $Update["message"]["chat"]["id"]; 
-    $Bot->sendMessage(["chat_id" => $ChatId, "text" => "sen sus lan"]);
+    $Bot->sendMessage(["chat_id" => $ChatId, "text" => "küfür etmezsek sevirim günah çünkü Allah ilerde sormaz mı?"]);
 });
 #########################################################################################################################################################
 $Bot->command("/aferin oluma/mi", function ($Update, $Match) use ($Bot) {
