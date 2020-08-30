@@ -12,7 +12,7 @@ if (file_exists(__DIR__ . '/.env')) {
 #########################################################################################################################################################
 $Bot->command("/[!.\/]yaraq/m", function ($Update, $Match) use ($Bot) {
     $ChatId = $Update["message"]["chat"]["id"];
-    $Bot->sendMessage(["chat_id" => $ChatId, "text" => "Started bot."]);
+    $Bot->sendMessage(["chat_id" => $ChatId, "text" => "Başlarım başlamam sanane lan amcık"]);
 }); 
 #########################################################################################################################################################
 $Bot->command("/Rıfkı/m", function ($Update, $Match) use ($Bot) {
