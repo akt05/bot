@@ -10,17 +10,17 @@ if (file_exists(__DIR__ . '/.env')) {
 #########################################################################################################################################################
 
 #########################################################################################################################################################
-$Bot->command("/[!.\/]yaraq/m", function ($Update, $Match) use ($Bot) {
+$Bot->command("/[!.\/]yaraq/mi", function ($Update, $Match) use ($Bot) {
     $ChatId = $Update["message"]["chat"]["id"];
     $Bot->sendMessage(["chat_id" => $ChatId, "text" => "Başlarım başlamam sanane lan amcık"]);
 }); 
 #########################################################################################################################################################
-$Bot->command("/Rıfkı/m", function ($Update, $Match) use ($Bot) {
+$Bot->command("/Rıfkı/mi", function ($Update, $Match) use ($Bot) {
     $ChatId = $Update["message"]["chat"]["id"]; 
     $Bot->sendMessage(["chat_id" => $ChatId, "text" => "kes lan amcık"]);
 });
 #########################################################################################################################################################
-$Bot->command("/amk/m", function ($Update, $Match) use ($Bot) {
+$Bot->command("/amk/mi", function ($Update, $Match) use ($Bot) {
     $ChatId = $Update["message"]["chat"]["id"]; 
     $Bot->sendMessage(["chat_id" => $ChatId, "text" => "küfür etmezsek sevirim günah çünkü Allah ilerde sormaz mı?"]);
 });
@@ -30,7 +30,7 @@ $Bot->command("/aferin oluma/mi", function ($Update, $Match) use ($Bot) {
     $Bot->sendMessage(["chat_id" => $ChatId, "text" => "estağfurullah herzamanki hâlim"]);
 });
 #########################################################################################################################################################
-$Bot->command("/sakin olum/m", function ($Update, $Match) use ($Bot) {
+$Bot->command("/sakin olum/mi", function ($Update, $Match) use ($Bot) {
     $ChatId = $Update["message"]["chat"]["id"]; 
     $Bot->sendMessage(["chat_id" => $ChatId, "text" => "tamam sakinim ama dokunanı sikerim"]);
 });
