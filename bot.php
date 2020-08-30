@@ -20,7 +20,7 @@ $Bot->command("/Rıfkı/m", function ($Update, $Match) use ($Bot) {
     $Bot->sendMessage(["chat_id" => $ChatId, "text" => "kes lan amcık"]);
 });
 #########################################################################################################################################################
-$Bot->command("/küfür etme kardeşim/m", function ($Update, $Match) use ($Bot) {
+$Bot->command("/amk/m", function ($Update, $Match) use ($Bot) {
     $ChatId = $Update["message"]["chat"]["id"]; 
     $Bot->sendMessage(["chat_id" => $ChatId, "text" => "sen sus lan"]);
 });
