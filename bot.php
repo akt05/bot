@@ -51,9 +51,9 @@ $Bot->command("/bilmem/mi", function ($Update, $Match) use ($Bot) {
 mem"]);
 });
 #########################################################################################################################################################
-$Bot->command("/[i][ı]yi geceler/mi", function ($Update, $Match) use ($Bot) {
+$Bot->command("/[iı]yi geceler/mi", function ($Update, $Match) use ($Bot) {
     $ChatId = $Update["message"]["chat"]["id"]; 
-    $Bot->sendMessage(["chat_id" => $ChatId, "text" => "sizede Yeğen sizede...."]);
+    $Bot->sendMessage(["chat_id" => $ChatId, "text" => "Yat zıbar lan Kürşad sende uyu lan yarın okula gidicen"]);
 });
 #########################################################################################################################################################
 $Bot->command("/aq/mi", function ($Update, $Match) use ($Bot) {
