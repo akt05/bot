@@ -47,7 +47,8 @@ $Bot->command("/dayi/mi", function ($Update, $Match) use ($Bot) {
 #########################################################################################################################################################
 $Bot->command("/bilmem/mi", function ($Update, $Match) use ($Bot) {
     $ChatId = $Update["message"]["chat"]["id"]; 
-    $Bot->sendMessage(["chat_id" => $ChatId, "text" => "bilmem kardeş meyveyi soymadan içinden ne çıkacak bilmem"]);
+    $Bot->sendMessage(["chat_id" => $ChatId, "text" => "bilemem kardeş meyveyi soymadan içinden ne çıkacak bile
+mem"]);
 });
 #########################################################################################################################################################
 $Bot->command("/İyi geceler/mi", function ($Update, $Match) use ($Bot) {
