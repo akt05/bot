@@ -42,7 +42,7 @@ $Bot->command("/ali/mi", function ($Update, $Match) use ($Bot) {
 #########################################################################################################################################################
 $Bot->command("/day[iı]/mi", function ($Update, $Match) use ($Bot) {
     $ChatId = $Update["message"]["chat"]["id"]; 
-    $Bot->sendMessage(["chat_id" => $ChatId, "text" => "buyur yeğen"]);
+    $Bot->sendMessage(["chat_id" => $ChatId, "text" => "dayın senin çükünü yesin"]);
 });
 #########################################################################################################################################################
 $Bot->command("/bilmem/mi", function ($Update, $Match) use ($Bot) {
