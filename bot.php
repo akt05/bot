@@ -40,7 +40,7 @@ $Bot->command("/ali/mi", function ($Update, $Match) use ($Bot) {
     $Bot->sendMessage(["chat_id" => $ChatId, "text" => "kerpeten Ali nabün la"]);
 });
 #########################################################################################################################################################
-$Bot->command("/dayi/mi", function ($Update, $Match) use ($Bot) {
+$Bot->command("/day[iı]/mi", function ($Update, $Match) use ($Bot) {
     $ChatId = $Update["message"]["chat"]["id"]; 
     $Bot->sendMessage(["chat_id" => $ChatId, "text" => "buyur yeğen"]);
 });
@@ -56,13 +56,25 @@ $Bot->command("/İyi geceler/mi", function ($Update, $Match) use ($Bot) {
     $Bot->sendMessage(["chat_id" => $ChatId, "text" => "sizede Yeğen sizede...."]);
 });
 #########################################################################################################################################################
-
+$Bot->command("/aq/mi", function ($Update, $Match) use ($Bot) {
+    $ChatId = $Update["message"]["chat"]["id"]; 
+    $Bot->sendMessage(["chat_id" => $ChatId, "text" => "küfür etme ağzını yüzünü sikerim"]);
+});
 #########################################################################################################################################################
-
+$Bot->command("/amk/mi", function ($Update, $Match) use ($Bot) {
+    $ChatId = $Update["message"]["chat"]["id"]; 
+    $Bot->sendMessage(["chat_id" => $ChatId, "text" => "küfür etme ağzını yüzünü sikerim"]);
+});
 #########################################################################################################################################################
-
+$Bot->command("/sikik/mi", function ($Update, $Match) use ($Bot) {
+    $ChatId = $Update["message"]["chat"]["id"]; 
+    $Bot->sendMessage(["chat_id" => $ChatId, "text" => "küfür etme ağzını yüzünü sikerim"]);
+});
 #########################################################################################################################################################
-
+$Bot->command("/yaraq/mi", function ($Update, $Match) use ($Bot) {
+    $ChatId = $Update["message"]["chat"]["id"]; 
+    $Bot->sendMessage(["chat_id" => $ChatId, "text" => "küfür etme ağzını yüzünü sikerim"]);
+});
 #########################################################################################################################################################
 
 #########################################################################################################################################################
