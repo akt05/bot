@@ -51,7 +51,7 @@ $Bot->command("/bilmem/mi", function ($Update, $Match) use ($Bot) {
 mem"]);
 });
 #########################################################################################################################################################
-$Bot->command("/İyi geceler/mi", function ($Update, $Match) use ($Bot) {
+$Bot->command("/[iı]y[iı] geceler/mi", function ($Update, $Match) use ($Bot) {
     $ChatId = $Update["message"]["chat"]["id"]; 
     $Bot->sendMessage(["chat_id" => $ChatId, "text" => "sizede Yeğen sizede...."]);
 });
