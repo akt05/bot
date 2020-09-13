@@ -10,9 +10,9 @@ if (file_exists(__DIR__ . '/.env')) {
 #########################################################################################################################################################
 
 #########################################################################################################################################################
-$Bot->command("/[!.\/]yaraq/mi", function ($Update, $Match) use ($Bot) {
+$Bot->command("/[!.\/]racon/mi", function ($Update, $Match) use ($Bot) {
     $ChatId = $Update["message"]["chat"]["id"];
-    $Bot->sendMessage(["chat_id" => $ChatId, "text" => "Başlarım başlamam sanane lan amcık"]);
+    $Bot->sendMessage(["chat_id" => $ChatId, "text" => "ben kaldım kardeş, ben kaldım."]);
 }); 
 #########################################################################################################################################################
 $Bot->command("/Rıfkı/mi", function ($Update, $Match) use ($Bot) {
